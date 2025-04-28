@@ -6,37 +6,66 @@
     <link rel="stylesheet" href="mystyle8.css">
  </head>
 
-  <body>
-     <section>
-         <div class="nav">
-             <a href="#" class="logo-p"><img src="logo p.png"></a>
-             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Products</a></li>
-               <li><a href="#">What's New</a></li>
-               <li><a href="#">Contact</a></li>
-             </ul>
+ <body>
+   <section>
+     <div class="nav">
+        <a href="#" class="logo-p"><img src="images/logo p.png"></a>
+          <ul>
+            <li><a href="#Section1">Home</a></li>
+            <li><a href="#Section2">Products</a></li>
+            <li><a href="#Section3">About Us</a></li>
+            <li><a href="#Section4">Contact</a></li>
+        </ul>
+     </div>
+
+     <div class="content">
+        <div class="textBox">
+            <h2>That's What </br><span>I Like</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sint in soluta </br>molestiae nihil quod? Suscipit corrupti
+                sint incidunt unde voluptates voluptate, aspernatur consequuntu voluptatibus eveniet magni quia ab!</p>
+            <a href="#">View all products</a>
          </div>
 
-         <div class="content">
-             <div class="textBox">
-                 <h2>That's What </br><span>I Like</span></h2>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Sint in soluta aut<br> dicta, molestiae nihil quod? Suscipit corrupti
-                 sint incidunt unde voluptates<br> voluptate, aspernatur consequuntur
-                 voluptatibus eveniet magni quia ab!</p>
-                 <a href="#">View all products</a>
-             </div>
              <div class="imgBox">
-                <img src="pepsi001.png" class="Pepsi">
+                <img src="images/pepsi001.png" class="Pepsi">
              </div>
-         </div>
-
+      </div>
          <ul class="thumb">
-            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png'); changeBgColor('#0062be')"></li>
-            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png'); changeBgColor('#e60c2c')"></li>
-            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png'); changeBgColor('#1e1e1e')"></li>
-         </ul>
-      </section>
+            <button>Click on -></button>
+            <li><img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png'); changeBgColor('#0062be')"></li>
+            <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png'); changeBgColor('#e60c2c')"></li>
+            <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png'); changeBgColor('#1e1e1e')"></li>
+       </ul>
+    </section>
+
+      <div class="product" id="Section2">
+        <img src="images/product.png">
+      </div>
+
+      <div class="about" id="Section3">
+        <h1>ABOUT US</h1>
+        <div class="line"></div>
+        <p>Pepsi, originally created in 1893 by Caleb Bradham and named "Brad's Drink," was first sold in his drugstore in New Bern, North Carolina. Renamed Pepsi-Cola in 1898 due to its supposed digestive benefits, it was shortened to Pepsi in 1961.</p>
+      </div>
+    
+      <div class="contact" id="Section4">
+         <h1>CONTACT</h1>
+         <div class="line"></div>
+         <p>We’d love to hear from you! Whether you have a question, a suggestion, or just want to say hello, feel free to get in touch.</p>
+    
+         <div class="contact-info">
+           <p><strong>Email:</strong> pepsi@world.com</p>
+           <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+           <p><strong>Address:</strong> 123 Explore Lane, Wander City, WC 10101</p>
+         </div>
+    
+         <form class="contact-form">
+           <input type="text" placeholder="Your Name">
+           <input type="email" placeholder="Your Email">
+           <textarea placeholder="Your Message" rows="3"></textarea>
+           <button type="submit" class="ctn">Send Message</button>
+         </form>
+      </div>
 
       <script type="text/javascript">
           function imgSlider(anything){
