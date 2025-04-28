@@ -66,14 +66,14 @@ section {
     padding: 10px;
 }
 .content .textBox a {
-      color: #111;
-      background: #fff;
-      display:inline-block;
-      border-radius: 30px;
-      letter-spacing: 1px;
-      padding: 5px 20px;
-      text-decoration: none;
-      font-size: 16px;
+    color: #111;
+    background: #fff;
+    display:inline-block;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 16px;
 }
 .imgBox {
     display: flex;
@@ -103,4 +103,109 @@ section {
 }
 .thumb li img {
     width: 40px;
+}
+button {
+        padding: 12px 24px;
+        background-color: #0062be;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        cursor: pointer;
+}
+button:hover {
+    background-color: #004a96;
+}
+
+.product {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.product img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.about, .contact {
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #222;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+}
+
+.about h1, .contact h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #0062be;
+}
+
+.line {
+    width: 80px;
+    height: 4px;
+    background-color: #0062be;
+    margin: 10px auto 30px;
+    border-radius: 2px;
+}
+
+.about p, .contact p {
+    max-width: 800px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.contact-info {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+.contact-info p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.ctn {
+    padding: 12px 30px;
+    background-color: #0062be;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ctn:hover {
+    background-color: #004a96;
 }
